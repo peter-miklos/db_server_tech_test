@@ -30,4 +30,11 @@ feature "set and get values" do
 
     expect(last_response.body).to eq "somevalue"
   end
+
+  it "get notice if the key is not available" do
+    get "/set?somekey=somevalue"
+    get "/get?key=otherkey"
+
+    expect(last_response.body).to eq "key not found"
+  end
 end
