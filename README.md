@@ -31,5 +31,10 @@ set and get values
 ### Unit tests
 The following unit tests are used:
 ```
-TBD
+AppModel
+  #set_request
+    adds the key and value pairs into the requests
+  #get_request
+    returns the value connected to the passed key
+    returns warning message if key not found
 ```
