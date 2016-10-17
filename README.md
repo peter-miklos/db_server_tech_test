@@ -23,6 +23,8 @@ Tests
 ### Feature tests
 In feature tests the following test cases have been used:
 ```
+main path
+  returns 'Hello App!' if '/' path visited
 set and get values
   set the value and store it in memory by using '/set' path
   get the already set value by using the proper name of the key
