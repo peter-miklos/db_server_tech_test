@@ -1,0 +1,37 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/petermiklos/Google Drive/coding/ruby/makers/challenges/course/week10/db_server_tech_test/spec/models/app_model_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        4,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        3,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1476708110
+  }
+}
