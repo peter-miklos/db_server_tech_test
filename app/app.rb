@@ -1,6 +1,9 @@
 require 'sinatra/base'
 
 class App < Sinatra::Base
+  set :port, 4000
+  enable :sessions
+
   get '/' do
     'Hello App!'
   end
