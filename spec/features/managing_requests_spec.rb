@@ -1,5 +1,16 @@
 require 'spec_helper'
 
+feature 'start page' do
+  def app
+    App
+  end
+
+  it "returns 'Hello App!' if '/' path visited" do
+    visit "/"
+    expect(page).to have_content("Hello App!")    
+  end
+end
+
 feature "set and get values" do
   include Rack::Test::Methods
 
