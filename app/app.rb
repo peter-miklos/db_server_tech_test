@@ -12,12 +12,11 @@ class App < Sinatra::Base
   get "/set" do
     session[:requests] ||= AppModel.new
     session[:requests].set_kv_pair(request.query_string)
-    # session[:somekey] = params[:somekey]
   end
 
   get "/get" do
+    session[:requests] ||= AppModel.new
     session[:requests].get_value(params[:key])
-    # session[params[:key]]
   end
 
   # start the server if ruby file executed directly
