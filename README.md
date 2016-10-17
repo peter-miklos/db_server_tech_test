@@ -28,3 +28,8 @@ set and get values
   get the already set value by using the proper name of the key
 
 ```
+### Unit tests
+The following unit tests are used:
+```
+TBD
+```

@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require './app/models/app_model'
 
 class App < Sinatra::Base
   set :port, 4000
