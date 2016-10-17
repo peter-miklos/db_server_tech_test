@@ -13,5 +13,10 @@ feature "set and get values" do
     expect(last_response.body).to eq "somevalue"
   end
 
-  it "get the already set value by using the proper name of the key"
+  it "get the already set value by using the proper name of the key" do
+    get "/set?somekey=somevalue"
+    get "/get?key=somekey"
+
+    expect(last_response.body).to eq "somevalue"
+  end
 end
