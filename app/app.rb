@@ -9,7 +9,7 @@ class App < Sinatra::Base
   end
 
   get "/set" do
-    "somevalue"
+    session[:somekey] = params[:somekey]
   end
 
   # start the server if ruby file executed directly
