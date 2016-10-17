@@ -2,9 +2,12 @@
 source "https://rubygems.org"
 
 ruby '2.3.1'
-gem 'rspec'
+
 gem 'sinatra'
-gem 'rspec-sinatra'
-gem 'capybara'
-gem 'rack-test'
-# gem "rails"
+
+group :test do
+  gem 'rspec'
+  gem 'rspec-sinatra'
+  gem 'capybara'
+  gem 'rack-test'
+end
