@@ -16,7 +16,11 @@ $ rackup -p 4000 or ruby app/app.rb
 ```
 
 ### Screenshots
-TBD
+#### Using /set path
+![/set path](app/assets/images/screen_01.png)
+
+#### Using /get path
+![/get path](app/assets/images/screen_02.png)
 
 Tests
 -------
