@@ -13,7 +13,7 @@ class App < Sinatra::Base
   end
 
   get "/get" do
-    "somevalue"
+    session[params[:key].to_sym]
   end
 
   # start the server if ruby file executed directly
