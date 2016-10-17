@@ -7,14 +7,22 @@ describe AppModel do
   context "#set_request" do
     it "adds the key and value pairs into the requests" do
       query_string = "test_key=test_value"
-      app_model.set_request(query_string)
-      p app_model.requests
-      expect(app_model.requests["test_key".to_sym]).to eq "test_value"
+      app_model.set_kv_pair(query_string)
+      expect(app_model.requests["test_key"]).to eq "test_value"
     end
   end
 
-  context "" do
+  context "#get_request" do
 
+    before {app_model.set_kv_pair("test_key=test_value")}
+
+    it "returns the value connected to the passed key" do
+      expect(app_model.get_value("test_key")).to eq "test_value"
+    end
+
+    it "returns warning message if key not found" do
+      expect(app_model.get_value("test_key1")).to eq "key not found"
+    end
   end
 
 end
