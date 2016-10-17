@@ -6,15 +6,14 @@ describe AppModel do
 
   context "#set_request" do
     it "adds the key and value pairs into the requests" do
-      query_string = "test_key=test_value"
-      app_model.set_kv_pair(query_string)
+      app_model.set_kv_pair({"test_key" => "test_value"})
       expect(app_model.requests["test_key"]).to eq "test_value"
     end
   end
 
   context "#get_request" do
 
-    before {app_model.set_kv_pair("test_key=test_value")}
+    before {app_model.set_kv_pair({"test_key" => "test_value"})}
 
     it "returns the value connected to the passed key" do
       expect(app_model.get_value("test_key")).to eq "test_value"

@@ -11,7 +11,8 @@ class App < Sinatra::Base
 
   get "/set" do
     session[:requests] ||= AppModel.new
-    session[:requests].set_kv_pair(request.query_string)
+    session[:requests].set_kv_pair(params)
+    request.query_string
   end
 
   get "/get" do
